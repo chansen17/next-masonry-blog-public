@@ -13,7 +13,7 @@ const Header = () => {
     const router = useRouter();
     const { colorMode } = useColorMode()
     return (
-        <Stack direction={{sm: "column", md: "row"}} mt="12" bg={colorMode === 'light' ? "gray.700" : "gray.900"} p="3" borderRadius="lg" alignItems="center" mb="2rem" color={colorMode === 'light' ? "#fff" : "#ccc"}>
+        <Stack direction={{xs: "column", sm: "column", md: "row"}} mt="12" bg={colorMode === 'light' ? "gray.700" : "gray.900"} p="3" borderRadius="lg" alignItems="center" mb="2rem" color={colorMode === 'light' ? "#fff" : "#ccc"}>
             <Box>
                 <Avatar borderRadius="full" boxSize="100px" objectFit="cover" src={headerData.avatarUrl} alt="Segun Adebayo" mr={{sm: null, md: 2, lg: 3}} />
             </Box>
